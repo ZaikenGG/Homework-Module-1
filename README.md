@@ -1,114 +1,144 @@
 # StudyTrack
+### Aplicación móvil para la organización académica
 
-## Descripción del proyecto
+**Autor:** Erick Yongdae Kim Shin  
+**Repositorio del proyecto:** https://github.com/ZaikenGG/Homework-Module-1  
+**Entrega:** Borrador del proyecto — Módulo 5  
+**Estado:** Diseño y planificación inicial del proyecto
 
-StudyTrack es una aplicación móvil diseñada para ayudar a estudiantes universitarios a organizar sus tareas, trabajos, exámenes y fechas importantes desde un dispositivo Android.
+---
 
-La aplicación permitirá registrar actividades académicas, consultar cuáles están pendientes, establecer fechas de entrega y marcar las tareas que ya fueron completadas.
+## 1. Descripción del proyecto
 
-## Exposición del problema
+**StudyTrack** es una aplicación móvil diseñada para ayudar a estudiantes universitarios a organizar sus tareas, actividades, exámenes y fechas importantes desde una sola plataforma. El propósito es ofrecer una forma práctica de registrar responsabilidades académicas, revisar próximas entregas y dar seguimiento al progreso de cada actividad.
 
-Los estudiantes normalmente tienen diferentes materias y actividades que deben entregar durante la semana. Cuando existen varias fechas de entrega, puede ser difícil recordar todas las responsabilidades académicas.
+El proyecto utiliza **React Native** para desarrollar la interfaz móvil mediante componentes reutilizables y una base de código que puede adaptarse a diferentes plataformas. Esta tecnología permite enfocar el desarrollo en una experiencia consistente y facilita la posibilidad de ampliar el proyecto a Android y, con los ajustes correspondientes, iOS. La compatibilidad final dependerá de las funciones y dependencias que se integren.
 
-Esto puede provocar que una persona olvide una tarea o entregue un trabajo fuera de tiempo.
+## 2. Exposición del problema
 
-StudyTrack busca solucionar este problema reuniendo las actividades académicas en una sola aplicación y mostrando de forma sencilla las tareas pendientes.
+Los estudiantes suelen recibir información académica a través de diferentes medios, como plataformas educativas, correos, mensajes y notas personales. Mantener todas las fechas y actividades organizadas puede resultar complicado y ocasionar que se olviden entregas o se dé prioridad a tareas menos urgentes.
 
-## Plataforma
+StudyTrack propone centralizar la organización académica en una aplicación móvil clara y fácil de utilizar. De esta manera, el estudiante puede consultar sus pendientes, registrar nuevas actividades y actualizar su estado desde un solo lugar.
 
-La aplicación será desarrollada principalmente para dispositivos Android.
+## 3. Objetivos
 
-Para el desarrollo utilizaré Android Studio, ya que proporciona las herramientas necesarias para crear, probar y ejecutar aplicaciones Android.
+### Objetivo general
+Diseñar y desarrollar una aplicación móvil que facilite la organización y el seguimiento de las responsabilidades académicas de estudiantes universitarios.
 
-La aplicación podrá probarse utilizando un emulador de Android o un dispositivo móvil físico.
+### Objetivos específicos
+- Permitir el registro de tareas con materia, nombre, descripción y fecha de entrega.
+- Presentar las actividades pendientes de forma organizada.
+- Facilitar la edición, eliminación y finalización de tareas.
+- Diseñar una interfaz moderna, legible y sencilla de navegar.
+- Aplicar una estructura de componentes reutilizables mediante React Native.
+- Documentar el avance del proyecto y sus cambios utilizando GitHub.
 
-## Interfaz de usuario
+## 4. Plataforma y tecnologías
 
-La interfaz del estudiante será sencilla y fácil de utilizar.
+### Plataforma objetivo
+El proyecto está orientado principalmente a dispositivos móviles Android. Debido al uso de React Native, también existe la posibilidad de adaptar la aplicación a iOS, siempre que la configuración, las dependencias y las pruebas necesarias lo permitan.
 
-La pantalla principal mostrará las tareas registradas y sus fechas de entrega.
+### Tecnologías y herramientas
+- **React Native:** desarrollo de la interfaz móvil mediante componentes reutilizables.
+- **JavaScript/TypeScript:** lógica y estructura de la aplicación, según la configuración del proyecto.
+- **Expo y Expo Router:** herramientas previstas para facilitar la ejecución, el desarrollo y la navegación entre pantallas, si forman parte de la configuración final.
+- **Git y GitHub:** control de versiones, respaldo del código y documentación del proyecto.
+- **Emulador o dispositivo físico:** pruebas de navegación, diseño y funcionamiento.
 
-El usuario podrá:
+La selección definitiva de herramientas debe coincidir con las dependencias y archivos que realmente estén configurados en el repositorio.
 
-- Registrar una nueva tarea.
-- Escribir el nombre de la materia.
-- Agregar una descripción.
-- Seleccionar una fecha de entrega.
-- Marcar una actividad como completada.
-- Editar una tarea.
-- Eliminar una tarea.
+## 5. Interfaz de usuario
 
-## Interfaz de administrador
+La interfaz está dirigida al estudiante y busca que las tareas importantes se identifiquen rápidamente. La propuesta visual utiliza un estilo moderno y minimalista, con fondo oscuro, tarjetas diferenciadas, acentos azules y texto de alto contraste.
 
-El proyecto tendrá una interfaz administrativa básica.
+### Pantallas propuestas
+1. **Inicio:** resumen de tareas pendientes y fechas próximas.
+2. **Crear tarea:** formulario para ingresar materia, nombre, descripción y fecha de entrega.
+3. **Detalle de tarea:** información completa y acciones disponibles.
+4. **Editar tarea:** modificación de los datos registrados.
+5. **Tareas completadas:** consulta de actividades finalizadas.
+6. **Calendario u organización por fecha:** vista complementaria que podría incorporarse según el alcance del proyecto.
 
-El administrador podrá consultar información relacionada con los usuarios y supervisar el funcionamiento general de la aplicación.
+## 6. Interfaz de administrador
 
-En la primera versión del proyecto, las funciones administrativas serán limitadas, ya que el objetivo principal será desarrollar correctamente las funciones utilizadas por los estudiantes.
+La versión inicial está enfocada en el uso individual del estudiante y no requiere un panel de administración independiente. Si el alcance del proyecto cambia para incluir una comunidad de usuarios o una institución educativa, podría evaluarse una interfaz administrativa para gestionar cuentas, configuraciones o reportes. Esta ampliación se considera una posibilidad futura, no una función ya implementada.
 
-## Funcionalidad
+## 7. Funcionalidades principales
 
-Cuando el estudiante abra StudyTrack podrá observar las actividades que todavía tiene pendientes.
+Las funciones previstas para la aplicación son:
 
-Al seleccionar la opción **Nueva tarea**, aparecerá un formulario donde podrá ingresar:
+- Crear tareas y asociarlas con una materia.
+- Registrar el nombre, la descripción y la fecha de entrega.
+- Consultar las tareas pendientes.
+- Ver los detalles de una actividad.
+- Editar la información de una tarea.
+- Marcar una tarea como completada.
+- Eliminar tareas que ya no sean necesarias.
 
-- Materia.
-- Nombre de la tarea.
-- Descripción.
-- Fecha de entrega.
+### Posibles mejoras futuras
+- Recordatorios o notificaciones de fechas próximas.
+- Sincronización y respaldo de información.
+- Opciones de personalización y accesibilidad.
+- Filtros por materia, fecha o estado.
+- Funciones de priorización de actividades.
 
-Después de guardar la información, la tarea aparecerá automáticamente en la pantalla principal.
+Estas mejoras quedan sujetas al tiempo disponible y a la implementación y pruebas correspondientes. No deben considerarse funciones terminadas hasta que estén desarrolladas y verificadas.
 
-Cuando el estudiante termine una actividad podrá marcarla como completada.
+## 8. Diseño y navegación
 
-También podrá editarla en caso de que cambie la fecha de entrega o eliminarla cuando ya no sea necesaria.
+El flujo general propuesto es:
 
-## Diseño de la aplicación
+![Diseño de StudyTrack](1.png)
 
-El diseño de StudyTrack será sencillo, moderno y fácil de utilizar.
+### Principios de diseño
+- Navegación clara y consistente.
+- Formularios breves y fáciles de completar.
+- Jerarquía visual para destacar nombres y fechas de entrega.
+- Botones con etiquetas comprensibles.
+- Componentes reutilizables para mantener consistencia entre pantallas.
+- Diseño adaptable a diferentes tamaños de pantalla.
 
-La aplicación tendrá tres pantallas principales:
+Si se agregan wireframes o capturas de la interfaz al repositorio, pueden mostrarse en esta sección. Por ejemplo, si la imagen se guarda en `images/studytrack-wireframes.png`:
 
-### Pantalla de inicio
+```markdown
+![Wireframes de StudyTrack](images/studytrack-wireframes.png)
+```
 
-Mostrará las tareas pendientes y sus fechas de entrega.
+## 9. Alcance y plan de desarrollo
 
-También tendrá un botón para agregar una nueva tarea.
+El proyecto se organizará en las siguientes etapas:
 
-### Nueva tarea
+1. **Análisis:** definición del problema, público objetivo y requisitos.
+2. **Diseño:** elaboración de wireframes y definición de la navegación.
+3. **Desarrollo:** construcción de pantallas y funciones prioritarias con React Native.
+4. **Pruebas:** verificación de formularios, navegación y operaciones sobre las tareas.
+5. **Mejoras:** corrección de errores y ajustes de usabilidad.
+6. **Documentación:** actualización del README y del registro de cambios.
 
-Permitirá ingresar la materia, nombre de la tarea, descripción y fecha de entrega.
+### Criterios de evaluación
+- Las tareas se pueden registrar con información válida.
+- La lista refleja correctamente los cambios realizados.
+- Las acciones de editar, completar y eliminar funcionan según lo esperado.
+- La navegación es comprensible y consistente.
+- La aplicación se prueba en un emulador o dispositivo compatible.
+- La documentación distingue entre funcionalidades propuestas y completadas.
 
-Después de completar la información, el usuario podrá presionar el botón **Guardar**.
+## 10. Registro de cambios (Changelog)
 
-### Detalle de tarea
+| Versión | Descripción | Estado |
+|---|---|---|
+| 0.1.0 | Definición del problema, objetivo y público de StudyTrack | Borrador |
+| 0.2.0 | Identificación de pantallas y funciones principales | Planificado |
+| 0.3.0 | Documentación de React Native, plataforma e interfaz propuesta | Borrador del módulo 5 |
 
-Mostrará la información completa de una actividad.
+El registro debe actualizarse cuando se realicen cambios reales en el código o en la documentación. Antes de publicar una nueva versión, verifica que su descripción corresponda con el estado del proyecto.
 
-El usuario podrá:
+## 11. Conclusión
 
-- Marcar la tarea como completada.
-- Editar la tarea.
-- Eliminar la tarea.
+StudyTrack busca ofrecer a los estudiantes una herramienta móvil práctica para gestionar sus responsabilidades académicas. El uso de React Native permite desarrollar una interfaz basada en componentes reutilizables y deja abierta la posibilidad de ampliar la compatibilidad a otras plataformas. La definición de requisitos, pantallas y funciones prioritarias establece una base para continuar con el desarrollo, las pruebas y la documentación durante el término académico.
 
-## Diseño generado para StudyTrack
+## 12. Referencias
 
-![Diseño de StudyTrack](studytrack.png)
+GitHub. (s. f.). *Hello World*. https://docs.github.com/es/get-started/start-your-journey/hello-world
 
-## Objetivo del proyecto
-
-El objetivo principal de StudyTrack es desarrollar una aplicación Android que ayude a los estudiantes a mejorar la organización de sus responsabilidades académicas.
-
-Durante el desarrollo del proyecto aplicaré conocimientos relacionados con:
-
-- Android Studio.
-- Diseño de interfaces.
-- Desarrollo de aplicaciones móviles.
-- Almacenamiento de información.
-- Organización y gestión de tareas.
-
-## Conclusión
-
-StudyTrack será una aplicación enfocada en solucionar un problema común entre los estudiantes: la organización de sus responsabilidades académicas.
-
-A lo largo del término académico espero mejorar progresivamente la aplicación e incorporar nuevas funciones mientras aplico los conocimientos aprendidos durante el curso.
+Sánchez, J. J. (s. f.). *Taller Git y GitHub* [Repositorio]. GitHub. https://github.com/josejuansanchez/taller-git-github
