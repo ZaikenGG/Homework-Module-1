@@ -98,12 +98,6 @@ El flujo general propuesto es:
 - Componentes reutilizables para mantener consistencia entre pantallas.
 - Diseño adaptable a diferentes tamaños de pantalla.
 
-Si se agregan wireframes o capturas de la interfaz al repositorio, pueden mostrarse en esta sección. Por ejemplo, si la imagen se guarda en `images/studytrack-wireframes.png`:
-
-```markdown
-![Wireframes de StudyTrack](images/studytrack-wireframes.png)
-```
-
 ## 9. Alcance y plan de desarrollo
 
 El proyecto se organizará en las siguientes etapas:
